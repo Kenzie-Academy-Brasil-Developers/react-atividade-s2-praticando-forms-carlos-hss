@@ -41,44 +41,56 @@ function App() {
             <Form onSubmit={handleSubmit(onSubmitFunction)}>
                 <FloatLabel>
                     <Input
+                        type="text"
                         placeholder="Nome de usuário *"
                         {...register("user")}
+                        required
                     />
                     <Label>Nome de usuário</Label>
                 </FloatLabel>
                 <FloatLabel>
                     <Input
+                        type="text"
                         placeholder="Nome completo *"
                         {...register("name")}
+                        required
                     />
                     <Label>Nome completo</Label>
                 </FloatLabel>
                 <FloatLabel>
                     <Input
+                        type="email"
                         placeholder="Endereço de Email *"
                         {...register("email")}
+                        required
                     />
                     <Label>Endereço de Email</Label>
                 </FloatLabel>
                 <FloatLabel>
                     <Input
+                        type="email"
                         placeholder="Confirme seu Email *"
                         {...register("emailConfirm")}
+                        required
                     />
                     <Label>Confirme seu Email</Label>
                 </FloatLabel>
                 <Div>
                     <FloatLabel>
                         <Input
+                            type="password"
                             placeholder="Senha *"
                             {...register("password")}
+                            required
                         />
                         <Label>Senha</Label>
                     </FloatLabel>
                     <FloatLabel>
                         <Input
+                            type="password"
                             placeholder="Confirme sua senha *"
                             {...register("passwordConfirm")}
+                            required
                         />
                         <Label>Confirme sua senha</Label>
                     </FloatLabel>

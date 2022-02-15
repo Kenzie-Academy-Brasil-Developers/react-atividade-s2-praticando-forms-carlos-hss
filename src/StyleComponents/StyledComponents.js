@@ -52,15 +52,15 @@ export const Input = styled.input`
         color: transparent;
     }
 
-    :required:invalid + ${Label} {
+    :focus:invalid + ${Label}, :not(:placeholder-shown) + ${Label} {
         color: red;
     }
 
-    :focus:required:invalid {
+    :focus:invalid {
         border: 0.5px solid red;
     }
 
-    :required:invalid + label:before {
+    :invalid + ${Label}::before {
         content: "*";
     }
 
